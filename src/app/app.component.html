@@ -1,0 +1,9 @@
+<ng-template [ngIf]="fruits.length > 0" [ngIfElse]="loading">
+  <ol>
+    <li *ngFor="let fruit of fruits">{{ fruit }}</li>
+  </ol>
+</ng-template>
+
+<ng-template #loading>
+  <p>Carregando...</p>
+</ng-template>
